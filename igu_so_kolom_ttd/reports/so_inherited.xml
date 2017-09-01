@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="igu_so_kolom_ttd" inherit_id="sale.report_saleorder_document">
+            <!-- cari elemen div class dengan nilai oe_structure yang terakhir
+                 lalu letakkan kolom tanda tangan setelah posisi itu-->
+
+            <xpath expr="//div[@class='oe_structure'][last()]" position="after">
+                <table class="table">
+                    <tr>
+                        <td>Salesman</td>
+                        <td>Sales Supervisor</td>
+                        <td>Petugas Gudang</td>
+                    </tr>
+                    <tr style="padding-top:200px">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr style="padding-top:200px">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr style="padding-top:200px">
+                        <td>...................</td>
+                        <td>...................</td>
+                        <td>...................</td>
+                    </tr>
+
+                </table>
+            </xpath>
+
+        </template>
+
+    </data>
+</odoo>
